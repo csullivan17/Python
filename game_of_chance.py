@@ -1,7 +1,6 @@
 import random
 import time
 
-money = 100
 invalid_guess = "That was not a valid guess."
 game_lost = "Sorry, you lost the game and what money ou wagered."
 game_won = "Congratulations! You won $%s!"
@@ -63,6 +62,7 @@ def card_draw(bet):
 #Navigating the different games
 def game_hall():
     choice = ""
+    money = 100
     while choice != "X":
         print("Welcome to Cole's Game Hall!")
         choice = input("What would you like to play?\n  [F]: Coin Flip  [H]: Cho Han  [D]: Card Draw [X]: Quit\n")
